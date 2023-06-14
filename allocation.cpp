@@ -3,6 +3,7 @@
 /*
 	In C++, dynamic memory allocation allows you to allocate memory for variables or data structures at runtime rather than at compile time. This is done using the new operator to allocate memory on the heap and the delete operator to deallocate the memory when it is no longer needed
 */
+
 int main()
 {
 	std::size_t	*size = new std::size_t;
