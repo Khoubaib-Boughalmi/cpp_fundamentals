@@ -14,21 +14,20 @@ class Cylinder {
 			radius = radius_val;
 			height = height_val;
 		}
-	// Members variables
-	private :
-		double	radius {1.0};
-		double	height {2.5};
-	//Methods/functions
-	public :
+		//Methods/functions
 		double volume()
 		{
 			return PI * radius * radius * height;
 		}
+	// Members variables
+	private :
+		double	radius {1.0};
+		double	height {2.5};
 };	
 
 int main()
 {
-	Cylinder myCylinder;
+	Cylinder myCylinder(10, 15);
 	std::cout << "Default Volume: " << myCylinder.volume() << std::endl;
 	return (0);
 }
