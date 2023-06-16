@@ -4,11 +4,8 @@
 
 class Cylinder {
 	public :
-		Cylinder ()
-		{
-			radius = 5.0;
-			height = 5.5;
-		}
+		//constructors
+		Cylinder () = default;
 		Cylinder (double radius_val, double height_val)
 		{
 			radius = radius_val;

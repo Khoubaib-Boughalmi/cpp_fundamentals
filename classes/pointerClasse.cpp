@@ -42,12 +42,13 @@ class Cylinder {
 
 int main()
 {
-	Cylinder myCylinder;
-	std::cout << "Default Volume: " << myCylinder.volume() << std::endl;
-	std::cout << "Height: " << myCylinder.get_height() << std::endl;
-	std::cout << "Radius: " << myCylinder.get_radius() << std::endl;
-    myCylinder.set_height(1.1);
-    myCylinder.set_radius(3.0);
-	std::cout << "New Volume: " << myCylinder.volume() << std::endl;
+	Cylinder *myCylinder = new Cylinder(10, 25);
+	std::cout << "Default Volume: " << myCylinder->volume() << std::endl;
+	std::cout << "Height: " << myCylinder->get_height() << std::endl;
+	std::cout << "Radius: " << myCylinder->get_radius() << std::endl;
+    myCylinder->set_height(1.1);
+    myCylinder->set_radius(2.3);
+	std::cout << "New Volume: " << myCylinder->volume() << std::endl;
+    delete myCylinder; //prevent memory leak
 	return (0);
 }
