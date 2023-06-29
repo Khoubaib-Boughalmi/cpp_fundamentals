@@ -1,6 +1,11 @@
 #include <iostream>
 #include <string>
 
+void	concatFun(std::string* strPtr)
+{
+	*strPtr += " 1337";
+}
+
 int main()
 {
 	std::string name;
@@ -13,5 +18,7 @@ int main()
 	std::cout << "str3 length : " << str3.length() << '\n';
 	std::cin >> name;
 	std::cout << str1 << " " << name << '\n';
+	concatFun(&str1);
+	std::cout << str1 << '\n';
 	return (0);
 }

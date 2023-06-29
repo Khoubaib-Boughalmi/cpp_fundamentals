@@ -42,6 +42,7 @@ class Cylinder {
 
 int main()
 {
+    //create class through heap allocation
 	Cylinder *myCylinder = new Cylinder(10, 25);
 	std::cout << "Default Volume: " << myCylinder->volume() << std::endl;
 	std::cout << "Height: " << myCylinder->get_height() << std::endl;

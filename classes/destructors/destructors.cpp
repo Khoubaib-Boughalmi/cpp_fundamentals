@@ -9,7 +9,7 @@ Dog::Dog (std::string *dog_name, int dog_age, int dog_serialNumber)
 }
 Dog::~Dog ()
 {
-    free(serialNumber);
+    delete serialNumber;
     std::cout << "freed serialNumber" << std::endl;
 }
 
